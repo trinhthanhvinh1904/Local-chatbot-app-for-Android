@@ -10,7 +10,7 @@
 
 ### Bước 1 — Cài đặt ứng dụng
 
-1. Cài đặt file **chat-with-qwen.apk** vào điện thoại.
+1. Cài đặt file **chatbot-with-qwen.apk** vào điện thoại.
 2. Cài đặt **Termux** từ F-Droid: https://f-droid.org/packages/com.termux/
    > ⚠️ Không cài Termux từ Google Play vì phiên bản đó đã cũ và không được hỗ trợ.
 
@@ -57,7 +57,7 @@ cmake --build build --config Release -j$(nproc)
 
 ### Bước 3 — Mở ứng dụng chat
 
-Sau khi server đã khởi động thành công trong Termux, mở ứng dụng **chat-with-qwen** để bắt đầu trò chuyện.
+Sau khi server đã khởi động thành công trong Termux, mở ứng dụng **chatbot-with-qwen** để bắt đầu trò chuyện.
 
 ---
 
@@ -70,4 +70,5 @@ Mỗi lần muốn dùng chatbot, chỉ cần:
    cd llama.cpp
    ./build/bin/llama-server -m ~/models/Qwen3.5-0.8B-Q4_K_M.gguf -ngl 99 -c 2048 --host 0.0.0.0 --port 8080
    ```
+
 2. Mở ứng dụng **chat-with-qwen** và bắt đầu chat.
